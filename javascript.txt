@@ -1,4 +1,4 @@
-const API_KEY = AIzaSyCcrs7f042T1jKyrxTP8yFXYUZxNJ-VrYQ ; // PASTE YOUR KEY INSIDE THE QUOTES
+const API_KEY = AIzaSyAdzen_IwwCIbiGABZUAPzHnNBdVCsnqs4 ; // PASTE YOUR KEY INSIDE THE QUOTES
 
 // Language Switcher
 function setLang(lang) {
@@ -65,4 +65,5 @@ async function processLesson(mode) {
         status.innerText = "The AI is resting. Try again in a second! 🌸";
         console.error(e);
     }
+
 }
