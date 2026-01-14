@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.studys | Your Calm Learning Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">D.STUDYS</div>
+
+    <div class="container">
+        <div class="lang-switcher">
+            <button onclick="setLang('en')">English</button>
+            <button onclick="setLang('fr')">Français</button>
+            <button onclick="setLang('ar')">العربية</button>
+        </div>
+
+        <div class="card">
+            <h2 id="title">D.studys Pro AI</h2>
+            <p id="desc">Analyze any school subject. Paste a lesson or a YouTube transcript below.</p>
+
+            <div class="input-options">
+                <input type="file" id="pdf-file" accept=".pdf" style="display:none">
+                <button class="small-btn" onclick="document.getElementById('pdf-file').click()">📁 PDF Upload</button>
+                <button class="small-btn" onclick="alert('Please paste the video text below! ✨')">🎥 YouTube Link</button>
+            </div>
+
+            <textarea id="ai-input" placeholder="Paste your content here..."></textarea>
+            
+            <div class="main-buttons">
+                <button class="ai-btn" onclick="processLesson('simplify')">✨ Simplify Lesson</button>
+                <button class="ai-btn" onclick="processLesson('quiz')">📝 Generate Quiz</button>
+            </div>
+
+            <div id="ai-status"></div>
+            <div id="ai-response" class="response-box"></div>
+        </div>
+    </div>
+
+    <script src="javascript.txt"></script>
+</body>
+</html>
